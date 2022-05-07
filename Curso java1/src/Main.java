@@ -14,23 +14,31 @@ public class Main {
     String d = lector.nextLine();
     System.out.println("El mensaje introducido por el usuario es " + d);
 
-    try {
-      System.out.println("Introduce el valor de g");
-      int g = lector.nextInt();
+    boolean bandera = true;
 
-      boolean a = true;
-      char b = 'X';
-      int c = 2;
-      // int g = 3;
-      double e = 2.1123;
-      float f = 2.14f;
+    while (bandera == true) {
 
-      System.out.println("El valor de boolean es " + a + " y el valor de c x g es " + (c * g)
-          + " el valor de e es " + e);
-    } catch (InputMismatchException e) {
-      System.out.println("Por favor introduce un número entero");
-    } finally {
-      System.out.println("El sistem terminó");
+      try {
+        System.out.println("Introduce el valor de g");
+        int g = lector.nextInt();
+
+        boolean a = true;
+        char b = 'X';
+        int c = 2;
+        // int g = 3;
+        double e = 2.1123;
+        float f = 2.14f;
+
+        System.out.println("El valor de boolean es " + a + " y el valor de c x g es " + (c * g)
+            + " el valor de e es " + e);
+      } catch (InputMismatchException e) {
+        System.out.println("Por favor introduce un número entero");
+      } finally {
+        System.out.println("Desea seguir operando?");
+        lector.next();
+        bandera = lector.nextBoolean();
+      }
+
     }
 
 
