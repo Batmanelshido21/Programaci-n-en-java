@@ -34,7 +34,6 @@ public class Main3 {
       resultado = resultado * (i - 1);
     }
     System.out.println(resultado);
-
   }
 
 }
