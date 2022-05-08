@@ -28,9 +28,10 @@ public class Main2 {
     // }
 
     //
-    // for (int i = 1; i <= 100; i++) {
-    // System.out.print(i + ", ");
-    // }
+    for (int i = 1; i <= 100; i++) {
+      System.out.print(i + ", ");
+    }
+    System.out.println();
 
     System.out.println("Introduce el número a evaluar");
     int num = lector.nextInt();
